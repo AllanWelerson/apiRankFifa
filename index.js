@@ -61,8 +61,7 @@ router.get('/rank', function (req, res, next) {
     });
   });
 
+app.use(express.static(__dirname + '/'));
 app.use('/', router);
 
-var porta = process.env.Port || 8080;
-
-app.listen(porta);
+app.listen(process.env.PORT || 5000);
