@@ -60,4 +60,7 @@ router.get('/rank', function (req, res, next) {
   });
 
 app.use('/', router);
-app.listen(3000);
+
+var porta = process.env.Port || 8080;
+
+app.listen(porta);
