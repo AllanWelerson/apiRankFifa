@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended : false }));
 app.use((req, res, next)=>{
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'https://allanwelerson.github.io/rank-fifa/');
+    res.setHeader('Access-Control-Allow-Origin', 'https://allanwelerson.github.io/*');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods','GET');
